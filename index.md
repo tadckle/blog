@@ -1,3 +1,9 @@
+---
+layout: default
+comments: true
+# other options
+---
+
 Hello the world!
 
 Syntax highlighted code block
@@ -13,7 +19,5 @@ Syntax highlighted code block
 2. List
 
 **Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 
 
