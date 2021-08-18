@@ -1,8 +1,3 @@
----
-layout: default
-comments: true
-# other options
----
 # This is about information
 
 - Item1
