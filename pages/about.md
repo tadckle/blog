@@ -1,6 +1,3 @@
----
-nocomments: false
----
 # This is about information
 
 - Item1
