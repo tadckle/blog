@@ -1,8 +1,3 @@
----
-layout: default
-comments: true
-# other options
----
 Hello the world!
 
 Syntax highlighted code block
