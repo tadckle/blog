@@ -1,5 +1,5 @@
 ---
-nocomments: true
+nocomments: false
 ---
 # This is about information
 
