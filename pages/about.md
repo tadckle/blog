@@ -1,9 +1,4 @@
-* TOC
 {:toc}
-
-- [This is about information](#this-is-about-information)
-- [Another header, that'e easy](#another-header-thate-easy)
-	- [This is good.](#this-is-good)
 
 # This is about information
 
