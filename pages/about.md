@@ -1,3 +1,4 @@
+* TOC
 {:toc}
 
 - [This is about information](#this-is-about-information)
