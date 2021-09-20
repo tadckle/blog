@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<body>
+	<nav>
+		<ul>
+			<script>
+				function changeImg(event) {
+					const id = event.target.id;
+					const imgHolder = document.getElementById("image_holder");
+					imgHolder.src = `${id}.jpg`;
+				}
+			</script>
+			<li><a id="forest" href="javascript:void(0)" onclick="changeImg(event)">Forest</a></li>
+			<li><a id="lake" href="javascript:void(0)" onclick="changeImg(event)">Lake</a></li>
+			<li><a id="autom" href="javascript:void(0)" onclick="changeImg(event)">Autom</a></li>
+		</ul>
+	</nav>
+	<img id="image_holder" src="forest.jpg" alt="The sample image" height="500">
+</body>
