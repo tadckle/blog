@@ -22,7 +22,30 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      {{ content }}
+      <style type="text/css">
+        div#navleft {
+          float: left;
+          width: 180px;
+        }
+
+        div#maincontent {
+          float: left;
+          width: 850px;
+        }
+      </style>
+
+      <div id="navleft">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/photo">Photo</a></li>
+          <li><a href="/audio">Audio</a></li>
+          <li><a href="/video">Video</a></li>
+        </ul>
+      </div>
+
+      <div id="maincontent">
+        {{ content }}
+      </div>
 
       <!--
         <footer class="site-footer">
