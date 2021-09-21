@@ -27,7 +27,7 @@ layout: default
 		function changeMusic(event) {
 			const id = event.target.id;
 			const audioHolder = document.getElementById("audioHolder");
-			audioHolder.src = `music/${audios[id]}`;
+			audioHolder.src = audios[id];
 		}
 	</script>
 
@@ -41,6 +41,6 @@ layout: default
 		</figcaption>
 	</figure>
 
-	<audio id="audioHolder" controls autoplay src="music/He's a Pirate(大气).mp3">
+	<audio id="audioHolder" controls autoplay src="He's a Pirate(大气).mp3">
 	</audio>
 </body>
