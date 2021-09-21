@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<body>
+	<style type="text/css">
+		audio {
+			width: 600px;
+		}
+
+		.menu ul {
+			list-style: none;
+		}
+		.menu li {
+			margin-right: 5px;
+			display: inline-block;
+		}
+	</style>
+
+	<script>
+		audios = { 
+			"pirate": "He's a Pirate(大气).mp3",
+			"courage": "One Man's Courage(大气).mp3",
+			"gift": "颁奖背景音乐（轻快）.mp3"
+		}
+
+		function changeMusic(event) {
+			const id = event.target.id;
+			const audioHolder = document.getElementById("audioHolder");
+			audioHolder.src = `music/${audios[id]}`;
+		}
+	</script>
+
+	<figure>
+		<figcaption class="menu">
+			<ul>
+				<li><a id="pirate" href="javascript:void(0)" onclick="changeMusic(event)">He's a Pirate</a></li>
+			<li><a id="courage" href="javascript:void(0)" onclick="changeMusic(event)">One Man's Courage</a></li>
+			<li><a id="gift" href="javascript:void(0)" onclick="changeMusic(event)">All Star</a></li>
+			</ul>
+		</figcaption>
+	</figure>
+
+	<audio id="audioHolder" controls autoplay src="music/He's a Pirate(大气).mp3">
+	</audio>
+</body>
