@@ -1,7 +1,7 @@
-* {
+main, aside {
   box-sizing: border-box;
 }
- 
+
 body {
   font-family: Arial;
   padding: 10px;
@@ -46,7 +46,7 @@ nav a:hover {
 /* 图像部分 */
 .fakeimg {
   background-color: #aaa;
-  width: 100%;
+  width: 100% - 20px;
   padding: 20px;
 }
 
