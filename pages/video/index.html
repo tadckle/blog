@@ -12,9 +12,16 @@ layout: default
 			font-size: 1rem;
 			color: red;
 		}
+		
+		#video-wrapper {
+			text-align: center;
+			margin-top: 20px;
+		}
 	</style>
-	<video controls src="friday.mp4">
-		<track default kind="captions" srclang="en" src="friday.vtt" />
-		<p>Sorry, your browser doesn't support embedded audio</p>
-	</video>
+	<div id="video-wrapper">
+		<video controls src="friday.mp4">
+			<track default kind="captions" srclang="en" src="friday.vtt" />
+			<p>Sorry, your browser doesn't support embedded audio</p>
+		</video>
+	</div>
 </body>
