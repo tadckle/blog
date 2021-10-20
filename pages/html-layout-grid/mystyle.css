@@ -1,0 +1,102 @@
+body {
+  display: grid;
+  grid-template-columns: 75fr 25fr;
+}
+
+header {
+  grid-column: 1 / span 2;
+}
+
+nav {
+  grid-column: 1 / span 2;
+}
+
+main {
+  grid-column: 1 / span 1;
+}
+
+aside {
+  grid-column: 2 / span 1;
+}
+
+footer {
+  grid-column: 1 / span 2;
+}
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，aside显示在main的下面 */
+@media screen and (max-width: 800px) {
+  main, aside {   
+    grid-column: 1 / span 2;
+  }
+}
+
+/* 响应式布局 -屏幕尺寸小于 600px 时，导航条改为上下布局 */
+@media screen and (max-width: 600px) {
+  nav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Above is grid layout  */
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 导航条 */
+nav {
+  overflow: hidden;
+  background-color: #333;
+}
+ 
+/* 导航链接 */
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+/* 链接 - 修改颜色 */
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* 图像部分 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100% - 20px;
+  padding: 20px;
+}
+
+aside {
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* 文章卡片效果 */
+article, section {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 底部 */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
