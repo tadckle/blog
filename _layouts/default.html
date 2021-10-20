@@ -23,9 +23,26 @@
 
     <main id="content" class="main-content" role="main">
       <style type="text/css">
-        div#navleft {
-          width: 180px;
+        /* 导航条 */
+        nav {
+          overflow: hidden;
+          background-color: #333;
+        }
+          
+        /* 导航链接 */
+        nav a {
+          float: left;
           display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+          
+        /* 链接 - 修改颜色 */
+        nav a:hover {
+          background-color: #ddd;
+          color: black;
         }
 
         div#maincontent {
@@ -34,14 +51,14 @@
         }
       </style>
 
-      <div id="navleft">
+      <nav>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/pages/photo">Photo</a></li>
           <li><a href="/pages/audio">Audio</a></li>
           <li><a href="/pages/video">Video</a></li>
         </ul>
-      </div>
+      </nav>
 
       <div id="maincontent">
         {{ content }}
